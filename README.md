@@ -1,2 +1,1 @@
-require
-=======
+Lab for RequireJS
