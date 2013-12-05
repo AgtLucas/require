@@ -10,9 +10,9 @@ module.exports = function(grunt) {
 
     // Define paths
     meta: {
-      srcPathSass: 'src/sass/',
+      srcPathSass: 'styles/sass/',
       srcPathJS: 'src/js/',
-      buildPathCSS: 'build/css/',
+      buildPathCSS: 'styles/css/',
       buildPathJS: 'build/js/'
     },
 
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
         options: {
           require: 'susy',
           sassDir: '<% meta.srcPathSass %>',
-          cssDir: '<% meta.buildPathSass %>',
+          cssDir: '<% meta.buildPathCSS %>',
           environment: 'production'
         }
       },
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
         options: {
           require: 'susy',
           sassDir: '<% meta.srcPathSass %>',
-          cssDir: '<% meta.buildPathSass %>'
+          cssDir: '<% meta.buildPathCSS %>'
         }
       }
     },
