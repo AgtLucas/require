@@ -30,6 +30,7 @@ module.exports = function(grunt) {
     //   }
     // },
 
+    // Compass
     compass: {
       dist: {
         options: {
@@ -47,6 +48,28 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    // Connect
+    connect: {
+      options: {
+        port: 9000,
+        hostname: 'localhost',
+        livereload: 35729
+      },
+      livereload: {
+        options: {
+          open: true
+        }
+      }
+    },
+
+    // Watch
+    watch: {
+      compass: {
+        files: ['<% meta.srcPathSass %>**/*.{scss,sass}'],
+        tasks: ['compass']
+      }
+    }
 
   });
 
