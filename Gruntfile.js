@@ -16,20 +16,6 @@ module.exports = function(grunt) {
       buildPathJS: 'build/js/'
     },
 
-    // // Sass
-    // sass: {
-    //   dist: {
-    //     // Grab the main.scss and make the main.css
-    //     files: {
-    //       '<%= meta.buildPathCSS %>main.css' : '<%= meta.srcPathSass %>main.scss'
-    //     },
-    //     // Minify Sass
-    //     options: {
-    //       style: 'compressed'
-    //     }
-    //   }
-    // },
-
     // Compass
     compass: {
       dist: {
