@@ -10,9 +10,9 @@ module.exports = function(grunt) {
 
     // Define paths
     meta: {
-      srcPathSass: 'styles/sass/',
+      srcPathSass: 'styles/',
       srcPathJS: 'src/js/',
-      buildPathCSS: 'styles/css/',
+      buildPathCSS: 'styles/',
       buildPathJS: 'build/js/'
     },
 
@@ -68,6 +68,12 @@ module.exports = function(grunt) {
       compass: {
         files: ['<% meta.srcPathSass %>**/*.{scss,sass}'],
         tasks: ['compass']
+      },
+      html: {
+        files: '*.hmtl'
+      },
+      options: {
+        livereload: '<%= connect.options.livereload %>'
       }
     }
 
