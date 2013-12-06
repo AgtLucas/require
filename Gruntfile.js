@@ -39,13 +39,6 @@ module.exports = function(grunt) {
           cssDir: '<% meta.buildPathCSS %>',
           environment: 'production'
         }
-      },
-      dev: {
-        options: {
-          require: 'susy',
-          sassDir: '<% meta.srcPathSass %>',
-          cssDir: '<% meta.buildPathCSS %>'
-        }
       }
     },
 
@@ -70,7 +63,7 @@ module.exports = function(grunt) {
         tasks: ['compass']
       },
       html: {
-        files: '*.hmtl'
+        files: '*.html'
       },
       options: {
         livereload: '<%= connect.options.livereload %>'
