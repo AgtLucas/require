@@ -35,8 +35,8 @@ module.exports = function(grunt) {
       dist: {
         options: {
           require: 'susy',
-          sassDir: '<% meta.srcPathSass %>',
-          cssDir: '<% meta.buildPathCSS %>',
+          sassDir: 'src/sass',
+          cssDir: 'build/css',
           environment: 'production'
         }
       }
