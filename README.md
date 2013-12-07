@@ -1,1 +1,1 @@
-Lab for RequireJS
+Lab for RequireJS and Compass + Susy
