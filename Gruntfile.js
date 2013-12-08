@@ -28,13 +28,16 @@ module.exports = function(grunt) {
       }
     },
 
-    // requirejs: {
-    //   compile: {
-    //     options: {
-    //       mainConfigFile: ""
-    //     }
-    //   }
-    // },
+    // RequireJS
+    requirejs: {
+      compile: {
+        options: {
+          mainConfigFile: "src/js",
+          mainConfigFile: "src/js/main.js",
+          out: "build/js/main.min.js"
+        }
+      }
+    },
 
     // Connect
     connect: {
