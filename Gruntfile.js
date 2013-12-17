@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     requirejs: {
       compile: {
         options: {
-          mainConfigFile: "src/js",
+          baseUrl: "src/js",
           mainConfigFile: "src/js/main.js",
           out: "build/js/main.min.js"
         }
