@@ -34,7 +34,18 @@ module.exports = function(grunt) {
         options: {
           baseUrl: "src/js",
           mainConfigFile: "src/js/main.js",
-          out: "build/js/main.min.js"
+          // out: "build/js/main.min.js"
+          done: function(done, output) {
+            var duplicates = require('rjs-build-analysis').duplicates(output);
+
+            if (duplicates.length > 0) {
+              grunt.log.subhead('Duplicates found....');
+              grunt.log.warn(duplicates);
+              done(new Error('r.js built duplicate modules, please check the excludes option.'));
+            }
+
+            done();
+          }
         }
       }
     },
