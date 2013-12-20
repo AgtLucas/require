@@ -28,6 +28,7 @@ module.exports = function(grunt) {
       }
     },
 
+    // TODO: Make RequireJS work properly
     // RequireJS
     requirejs: {
       compile: {
