@@ -35,7 +35,7 @@ module.exports = function(grunt) {
         options: {
           baseUrl: "src/js",
           mainConfigFile: "src/js/main.js",
-          out: "build/js/main.min.js"
+          out: "build/js/main.min.js",
           done: function(done, output) {
             var duplicates = require('rjs-build-analysis').duplicates(output);
 
