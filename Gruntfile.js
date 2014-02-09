@@ -37,6 +37,7 @@ module.exports = function(grunt) {
           name: 'require',
           baseUrl: "src/js",
           mainConfigFile: "src/js/main.js",
+          name: "src/js/almond",
           out: "build/js/main.min.js",
           done: function(done, output) {
             var duplicates = require('rjs-build-analysis').duplicates(output);
