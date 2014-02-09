@@ -32,24 +32,27 @@ module.exports = function(grunt) {
     // TODO: Make RequireJS work properly
     // RequireJS
     requirejs: {
-      compile: {
+      prod: {
         options: {
-          name: 'require',
-          baseUrl: "src/js",
-          mainConfigFile: "src/js/main.js",
-          name: "src/js/almond",
-          out: "build/js/main.min.js",
-          done: function(done, output) {
-            var duplicates = require('rjs-build-analysis').duplicates(output);
+          baseUrl: ".",
+          mainConfigFile: "app/config/requireconfig.js",
+          deps: ['app/src/js/main'],
+          insertRequire: ['app/src/js/main'],
+          name: "bower/almond/almond",
+          out: "app/build/js/main.min.js",
+          optimize: 'uglify2',
+          preserveLicenseComments: false
+          // done: function(done, output) {
+          //   var duplicates = require('rjs-build-analysis').duplicates(output);
 
-            if (duplicates.length > 0) {
-              grunt.log.subhead('Duplicates found....');
-              grunt.log.warn(duplicates);
-              done(new Error('r.js built duplicate modules, please check the excludes option.'));
-            }
+          //   if (duplicates.length > 0) {
+          //     grunt.log.subhead('Duplicates found....');
+          //     grunt.log.warn(duplicates);
+          //     done(new Error('r.js built duplicate modules, please check the excludes option.'));
+          //   }
 
-            done();
-          }
+          //   done();
+          // }
         }
       }
     },

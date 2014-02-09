@@ -1,3 +1,3 @@
-require(["wtf/app"], function(app) {
+require(["app/src/js/wtf/app"], function(app) {
 
 });

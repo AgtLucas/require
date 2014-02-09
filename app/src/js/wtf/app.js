@@ -2,7 +2,7 @@ define(function(require) {
 
   var button = document.createElement("button");
   button.onclick = function() {
-    var alerter = require(["wtf/alerter"], function(alerter) {
+    var alerter = require(["./alerter.js"], function(alerter) {
       alerter("WTF APP?");
     });
   }
