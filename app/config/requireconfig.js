@@ -4,6 +4,12 @@ require.config({
 
   paths: {
     'jquery': 'bower/jquery/jquery'
+  },
+
+  shim: {
+    'alerter': {
+      exports: 'app/src/js/wtf/alerter'
+    }
   }
 
 });
