@@ -11,10 +11,10 @@ module.exports = function(grunt) {
 
     // Define paths
     meta: {
-      srcPathSass: 'styles/',
-      srcPathJS: 'src/js/',
-      buildPathCSS: 'styles/',
-      buildPathJS: 'build/js/'
+      srcPathSass: 'app/src/sass/',
+      srcPathJS: 'app/src/js/',
+      buildPathCSS: 'app/build/css/',
+      buildPathJS: 'app/build/js/'
     },
 
     // Compass
