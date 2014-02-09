@@ -1,6 +1,4 @@
-define(["./alerter"], function(require, exports, module) {
-
-  // var a = require("./alerter");
+define(["./alerter"], function(require) {
 
   var button = document.createElement("button");
   button.onclick = function() {
