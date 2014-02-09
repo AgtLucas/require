@@ -1,4 +1,4 @@
-define(function(require, exports, module) {
+define(["./alerter"], function(require, exports, module) {
 
   // var a = require("./alerter");
 
