@@ -1,1 +1,1 @@
-Lab for RequireJS and Compass + Susy
+Lab for RequireJS + grunt-contrib-requirejs + AlmondJS
