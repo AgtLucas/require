@@ -2,4 +2,5 @@
 
 #### Resources:
 
+* http://requirejs.org/
 * http://gregfranko.com/requirejs-talk/
