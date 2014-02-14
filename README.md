@@ -9,4 +9,6 @@
 
 #### TODO:
 
-* Using RequireJS
+* Using RequireJS;
+* Using RequireJS with Grunt;
+* Using RequireJS with Almond (For optimization);
