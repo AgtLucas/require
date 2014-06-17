@@ -1,3 +1,4 @@
+// Could be requirejs.config...
 require.config({
 
   baseUrl: '/',
